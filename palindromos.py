@@ -20,8 +20,13 @@ class TestPalindrome(unittest.TestCase):
     def test_palindrome_simple2(self):
         result = palindrome('hola')
         self.assertEqual(result,False)
+    def test_palindrome_sentence(self):
+        result=palindrome('agita falsos usos la fatiga')
+        self.assertEqual(result,True)
 
 if __name__ == '__main__':
     unittest.main()
+
+
 
 
